@@ -2,11 +2,65 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 60px;
+    height: 56px;
+    width: 100%;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 0 10%;
 }
 
-button {
-    height: 20px;
-    width: 80px;
-    font-size: 10px;
+.mainButtons {
+    height: 80%;
+    width: 100%;
+    margin-right: 5%;
 }
+
+.mainButtons a{
+    font-size: 16px;
+}
+
+nav .createAccount {
+    align-items: center;
+    width: 250px;
+    height: 100%;
+    gap: 10px;
+}
+
+nav .createAccount svg{
+    width: 50px;
+}
+
+nav .navLogo {
+    align-items: center;
+    gap: 10px;
+}
+
+
+nav .navLogo img {
+    align-items: center;
+    width: 44px;
+    height: 36px;
+    gap: 10px;
+
+}
+
+nav .navLogo input {
+    width: 420px;
+    height: 36px;
+    border: 1px solid gray;
+    display: none;
+    border-radius:9px;
+    padding-left: 10px;
+
+    &::placeholder {
+        font-size: 15px;
+    }
+}
+  
+
+nav .createAccount .navLogin {
+    display: none;
+}
+
+
+
+
