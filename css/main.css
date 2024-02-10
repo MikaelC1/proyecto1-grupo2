@@ -26,6 +26,7 @@ button {
   height: 20px;
   width: 80px;
   font-size: 10px;
+  padding: 1px;
 }
 
 .mainButtons {
