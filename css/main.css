@@ -3,4 +3,42 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.row {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+}
+
+button {
+  height: 20px;
+  width: 80px;
+  font-size: 10px;
+}
+
+.mainButtons {
+  border: 1px solid rgb(59, 73, 223);
+  border-radius: 0.375rem;
+  background-color: white;
+}
+.mainButtons:hover, .mainButtons:hover a {
+  background-color: rgb(59, 73, 223);
+  color: white;
+  cursor: pointer;
+}
+.mainButtons a {
+  text-decoration: none;
+  color: rgb(59, 73, 223);
 }/*# sourceMappingURL=main.css.map */
