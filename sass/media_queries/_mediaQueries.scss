@@ -1,0 +1,19 @@
+@media screen and (min-width: 767px) {
+
+    nav .navLogo input {
+        display: block;
+    }
+
+    nav .createAccount svg {
+        display: none;
+    }
+
+    nav .createAccount {
+        gap: 0px;
+    }
+
+    .loginButton {
+        display: flex;
+    }
+    
+}

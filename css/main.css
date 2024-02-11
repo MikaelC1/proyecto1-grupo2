@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #F5F5F5;
+  max-width: 100%;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainButtons {
+  border: 1.5px solid rgb(59, 73, 223);
+  border-radius: 0.375rem;
+  background-color: white;
+}
+.mainButtons a {
+  color: rgb(59, 73, 223);
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.mainButtons:hover, .mainButtons:hover a {
+  background-color: rgb(59, 73, 223);
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.loginButton {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  width: 100px;
+  height: 80%;
+  margin-right: 5px;
+  border-radius: 0.375rem;
+  background-color: white;
+  border: none;
+  font-size: 15px;
+  text-decoration: none;
+  border: none;
+  color: rgb(133, 133, 133);
+}
+.loginButton:hover {
+  background-color: rgb(221, 224, 250);
+  color: rgb(59, 73, 223);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 56px;
+  width: 100%;
+  border-bottom: 1px solid #E0E0E0;
+  padding: 0 10%;
+  background-color: white;
+}
+
+.mainButtons {
+  height: 80%;
+  width: 100%;
+  margin-right: 5%;
+}
+
+.mainButtons a {
+  font-size: 16px;
+}
+
+nav .createAccount {
+  align-items: center;
+  width: 250px;
+  height: 100%;
+  gap: 10px;
+}
+
+nav .createAccount svg {
+  width: 50px;
+}
+
+nav .navLogo {
+  align-items: center;
+  gap: 10px;
+}
+
+nav .navLogo img {
+  align-items: center;
+  width: 44px;
+  height: 36px;
+  gap: 10px;
+}
+
+nav .navLogo input {
+  width: 420px;
+  height: 36px;
+  border: 1px solid gray;
+  display: none;
+  border-radius: 9px;
+  padding-left: 10px;
+}
+nav .navLogo input::-moz-placeholder {
+  font-size: 15px;
+}
+nav .navLogo input::placeholder {
+  font-size: 15px;
+}
+
+.li {
+  align-items: center;
+  gap: 20px;
+  height: 60px;
+  width: 100%;
+  padding-left: 15px;
+}
+
+.li li {
+  list-style: none;
+}
+
+.li li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(133, 133, 133);
+}
+
+.li li a span {
+  color: black;
+  font-weight: 500;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.card1 .imgPost {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: row;
+  height: 32px;
+  width: 32px;
+}
+.avatar .avatar1 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.avatar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 32px;
+  width: 32px;
+}
+.avatar .avatar2 {
+  position: absolute;
+  right: -30%;
+  bottom: -30%;
+  height: 20px;
+  width: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 767px) {
+  nav .navLogo input {
+    display: block;
+  }
+  nav .createAccount svg {
+    display: none;
+  }
+  nav .createAccount {
+    gap: 0px;
+  }
+  .loginButton {
+    display: flex;
+  }
+}/*# sourceMappingURL=main.css.map */

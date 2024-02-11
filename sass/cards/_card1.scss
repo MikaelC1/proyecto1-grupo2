@@ -1,0 +1,11 @@
+.card1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+    .imgPost {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
