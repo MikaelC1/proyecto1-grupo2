@@ -1,0 +1,27 @@
+.li {
+    align-items: center;
+    gap: 20px;
+    height: 60px;
+    width: 100%;
+    padding-left: 15px;
+}
+
+.li li {
+    list-style: none;
+    
+
+}
+
+.li li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: $list_color;
+}
+
+.li li a span{
+    color: black;
+    font-weight: $bold_text
+}
+
+
+
