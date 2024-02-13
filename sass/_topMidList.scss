@@ -1,8 +1,6 @@
 .li {
     align-items: center;
     gap: 20px;
-    height: 60px;
-    width: 100%;
     padding-left: 15px;
 
     li {
@@ -12,10 +10,21 @@
             font-size: 18px;
             text-decoration: none;
             color: $list_color;
+            padding: 5px;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: white;
+                color: blue;
+            }
 
             span{
                 color: black;
-                font-weight: $bold_text
+                font-weight: $bold_text;
+
+                &:hover {
+                    color: blue;
+                }
             }
         }
     }
