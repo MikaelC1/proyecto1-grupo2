@@ -4,6 +4,7 @@
     max-width: 100%;
     overflow: hidden;
     border-radius: 10px;
+    margin-top: 10px;
 
     .imgPost {
         width: 100%;
@@ -20,6 +21,26 @@
     .usersCard {
         gap: 10px;
         margin-bottom: 15px;
+
+        .userInfo {
+            a {
+                border-radius: 5px;
+                padding: 5px 0px;
+                color: rgb(31, 31, 31);
+                text-decoration: none;
+                font-weight: $bold_text;
+
+                &:hover {
+                    color: black;
+                    background-color: rgba(128, 128, 128, 0.274);
+                }
+            }
+
+            span {
+                font-size: 12px;
+                color: rgb(68, 67, 67);
+            }
+        }
     }
 
     .cardTitle {
@@ -27,8 +48,13 @@
         font-size: $bold_text;
         margin-bottom: 15px;
 
+        &:hover {
+            color: rgba(45,58,178);
+            cursor: pointer;
+        }
     }
     
+
     #padding {
         padding-left: 40px;
     }

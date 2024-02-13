@@ -39,6 +39,10 @@ body {
   border-radius: 10px;
   font-size: 15px;
 }
+.hashtags div .hText:hover {
+  color: black;
+  background-color: rgba(128, 128, 128, 0.274);
+}
 .hashtags div .hText .hColorP {
   color: purple;
   text-decoration: none;
@@ -63,6 +67,13 @@ body {
 }
 .reactions .reactionsBackground {
   border-radius: 5px;
+  /*  a {
+      display: none;
+
+      span {
+          display: none;
+      }
+  } */
 }
 .reactions .reactionsBackground svg {
   cursor: pointer;
@@ -216,6 +227,7 @@ nav .navLogo input::placeholder {
   max-width: 100%;
   overflow: hidden;
   border-radius: 10px;
+  margin-top: 10px;
 }
 .card1 .imgPost {
   width: 100%;
@@ -232,10 +244,29 @@ nav .navLogo input::placeholder {
   gap: 10px;
   margin-bottom: 15px;
 }
+.card2 .usersCard .userInfo a {
+  border-radius: 5px;
+  padding: 5px 0px;
+  color: rgb(31, 31, 31);
+  text-decoration: none;
+  font-weight: 500;
+}
+.card2 .usersCard .userInfo a:hover {
+  color: black;
+  background-color: rgba(128, 128, 128, 0.274);
+}
+.card2 .usersCard .userInfo span {
+  font-size: 12px;
+  color: rgb(68, 67, 67);
+}
 .card2 .cardTitle {
   font-size: 30px;
   font-size: 500;
   margin-bottom: 15px;
+}
+.card2 .cardTitle:hover {
+  color: rgb(45, 58, 178);
+  cursor: pointer;
 }
 .card2 #padding {
   padding-left: 40px;
@@ -283,5 +314,13 @@ nav .navLogo input::placeholder {
   }
   .loginButton {
     display: flex;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .reactionsBackground a {
+    display: block;
+  }
+  .reactionsBackground a span {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -15,5 +15,16 @@
     .loginButton {
         display: flex;
     }
-    
+}
+
+@media only screen and (max-width: 768px) {
+    .reactionsBackground {
+        a {
+            display: block;
+
+            span {
+                display: none;
+            }
+        }
+    }
 }
