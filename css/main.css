@@ -28,6 +28,60 @@ body {
   font-style: normal;
 }
 
+.hashtags {
+  margin-bottom: 15px;
+}
+.hashtags div .hText {
+  text-decoration: none;
+  color: #5B5EAB;
+  padding: 4px 7px;
+  text-transform: lowercase;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.hashtags div .hText .hColorP {
+  color: purple;
+  text-decoration: none;
+}
+.hashtags div .hText .hColorB {
+  color: blue;
+  text-decoration: none;
+}
+.hashtags div .hText .hColorG {
+  color: green;
+  text-decoration: none;
+}
+
+.reactions {
+  justify-content: space-between;
+}
+.reactions a {
+  color: rgb(133, 133, 133);
+  font-size: 15px;
+  padding: 10px;
+  text-decoration: none;
+}
+.reactions .reactionsBackground {
+  border-radius: 5px;
+}
+.reactions .reactionsBackground svg {
+  cursor: pointer;
+}
+.reactions .reactionsBackground:hover a {
+  color: black;
+}
+.reactions .reactionsBackground:hover {
+  background-color: rgba(128, 128, 128, 0.274);
+}
+.reactions .minRead {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.reactions .minRead span {
+  color: rgb(133, 133, 133);
+}
+
 .row {
   display: flex;
 }
@@ -35,6 +89,11 @@ body {
 .column {
   display: flex;
   flex-direction: column;
+}
+
+.alignCenter {
+  display: flex;
+  align-items: center;
 }
 
 .mainButtons {
@@ -88,40 +147,25 @@ nav {
   padding: 0 10%;
   background-color: white;
 }
-
-.mainButtons {
-  height: 80%;
-  width: 100%;
-  margin-right: 5%;
-}
-
-.mainButtons a {
-  font-size: 16px;
-}
-
 nav .createAccount {
   align-items: center;
   width: 250px;
   height: 100%;
   gap: 10px;
 }
-
 nav .createAccount svg {
   width: 50px;
 }
-
 nav .navLogo {
   align-items: center;
   gap: 10px;
 }
-
 nav .navLogo img {
   align-items: center;
   width: 44px;
   height: 36px;
   gap: 10px;
 }
-
 nav .navLogo input {
   width: 420px;
   height: 36px;
@@ -137,6 +181,15 @@ nav .navLogo input::placeholder {
   font-size: 15px;
 }
 
+.mainButtons {
+  height: 80%;
+  width: 100%;
+  margin-right: 5%;
+}
+.mainButtons a {
+  font-size: 16px;
+}
+
 .li {
   align-items: center;
   gap: 20px;
@@ -144,17 +197,14 @@ nav .navLogo input::placeholder {
   width: 100%;
   padding-left: 15px;
 }
-
 .li li {
   list-style: none;
 }
-
 .li li a {
   font-size: 18px;
   text-decoration: none;
   color: rgb(133, 133, 133);
 }
-
 .li li a span {
   color: black;
   font-weight: 500;
@@ -164,12 +214,31 @@ nav .navLogo input::placeholder {
   display: flex;
   flex-direction: column;
   max-width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
 }
 .card1 .imgPost {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.card2 {
+  background-color: white;
+  padding: 20px;
+}
+.card2 .usersCard {
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.card2 .cardTitle {
+  font-size: 30px;
+  font-size: 500;
+  margin-bottom: 15px;
+}
+.card2 #padding {
+  padding-left: 40px;
 }
 
 .avatar {
@@ -206,11 +275,11 @@ nav .navLogo input::placeholder {
   nav .navLogo input {
     display: block;
   }
-  nav .createAccount svg {
-    display: none;
-  }
   nav .createAccount {
     gap: 0px;
+  }
+  nav .createAccount svg {
+    display: none;
   }
   .loginButton {
     display: flex;
