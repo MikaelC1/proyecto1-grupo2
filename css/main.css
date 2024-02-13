@@ -284,4 +284,125 @@ nav .navLogo input::placeholder {
   .loginButton {
     display: flex;
   }
+}
+.comentario {
+  font-size: 10px;
+}
+
+.titulo {
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.titulo-header {
+  padding-left: 5px;
+  padding-top: 10px;
+  margin-bottom: 5px;
+}
+.titulo-header p {
+  font-size: 10px;
+}
+
+.tarjeta {
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  border-bottom: 1px solid lightgrey;
+}
+.tarjeta p {
+  margin-bottom: 5px;
+}
+.tarjeta img {
+  width: 30px;
+  height: 30px;
+}
+
+.yellow {
+  background-color: orange; /* Fondo naranja */
+  display: inline-block; /* Para permitir el box-shadow */
+  box-shadow: 0 0 5px orange; /* Sombra naranja */
+  padding: 2px;
+}
+
+.trending {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: 5px solid lightgrey;
+}
+.trending header {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.box {
+  box-sizing: border-box;
+  width: 80%;
+  height: 60px;
+  background-color: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.box a {
+  color: black;
+}
+.box:hover {
+  background-color: white;
+}
+
+a.normal {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+a.normal:hover {
+  color: blue;
+}
+
+div > a {
+  text-decoration: none;
+  font-size: small;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+div > a:hover {
+  color: blue;
+}
+
+header > a {
+  text-decoration: none;
+  cursor: pointer;
+}
+header > a:hover {
+  color: blue;
+}
+
+.recently {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.recently header {
+  margin-top: 15px;
+}
+
+.watercooler {
+  background-color: white;
+}
+
+#derecha {
+  width: 30%;
+  border-bottom: 5px solid lightgrey;
+  max-width: 30%;
+}
+
+.seccionDerecha {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+  #derecha {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
