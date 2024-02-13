@@ -3,19 +3,23 @@
 }
 .titulo{
     background-color: white;
+    box-sizing: border-box;
+    border-radius:15px;
+
 }
 .titulo-header{
-    padding-left:15px;
+    padding-left:5px;
     padding-top:10px;
-    margin-bottom:10px;
+    margin-bottom:5px;
     p{
-        font-size: 12px !important;
+        font-size: 10px;
     }
 }
 .tarjeta{
     box-sizing: border-box;
     margin-bottom:15px;
     margin-left:15px;
+    border-bottom:1px solid lightgrey;
     
     p{
         margin-bottom:5px;
@@ -33,21 +37,45 @@
 }
 .trending{
         
-        text-align:left;
+        
         padding-left:10px;
         padding-right:10px;
+        border-bottom:5px solid lightgrey;
+
         header{
             margin-bottom: 15px;
-        }
+            text-align: left;
+        }       
+        
+                
+}
+.box{
+    box-sizing: border-box;
+    width: 80%;
+    height: 60px;
+    background-color: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    a{
+    color:black;
+
+    }
+    &:hover{
+        background-color: white;
+    }
 }
 a.normal{
     text-decoration:none;
-    
+    color:black;
     cursor:pointer;
     &:hover{
         color:blue;
-    }
+        }
 }
+
+
 div > a {
     
     text-decoration:none;
@@ -71,7 +99,7 @@ header > a {
     padding-left:10px;
     padding-right:10px;
     header{
-    margin-bottom:15px;
+    margin-top:15px;
 
     }
 }
@@ -79,15 +107,17 @@ header > a {
     background-color: white;
 }
 #derecha {
-    background-color: lightgray; 
     
-    section{
-    margin-bottom:20px;
-    }
+    
+    width:30%;
+    border-bottom:5px solid lightgrey;
+    max-width:30%;
+    
+    
 }
 .seccionDerecha{
     box-sizing: border-box;
-    border-radius:20px
+    
 }
 @media screen and (max-width:1024px){
     #derecha{
