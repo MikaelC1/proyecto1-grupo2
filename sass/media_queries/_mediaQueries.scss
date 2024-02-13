@@ -4,12 +4,12 @@
         display: block;
     }
 
-    nav .createAccount svg {
-        display: none;
-    }
-
     nav .createAccount {
         gap: 0px;
+
+        svg {
+            display: none;
+        }
     }
 
     .loginButton {
