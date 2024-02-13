@@ -203,8 +203,6 @@ nav .navLogo input::placeholder {
 .li {
   align-items: center;
   gap: 20px;
-  height: 60px;
-  width: 100%;
   padding-left: 15px;
 }
 .li li {
@@ -214,10 +212,19 @@ nav .navLogo input::placeholder {
   font-size: 18px;
   text-decoration: none;
   color: rgb(133, 133, 133);
+  padding: 5px;
+  border-radius: 5px;
+}
+.li li a:hover {
+  background-color: white;
+  color: blue;
 }
 .li li a span {
   color: black;
   font-weight: 500;
+}
+.li li a span:hover {
+  color: blue;
 }
 
 #derecha {
