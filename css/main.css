@@ -39,6 +39,9 @@ body {
   border-radius: 10px;
   font-size: 15px;
 }
+.hashtags div .hText:hover {
+  color: black;
+}
 .hashtags div .hText .hColorP {
   color: purple;
   text-decoration: none;
@@ -63,6 +66,13 @@ body {
 }
 .reactions .reactionsBackground {
   border-radius: 5px;
+  /*  a {
+      display: none;
+
+      span {
+          display: none;
+      }
+  } */
 }
 .reactions .reactionsBackground svg {
   cursor: pointer;
@@ -210,81 +220,6 @@ nav .navLogo input::placeholder {
   font-weight: 500;
 }
 
-.card1 {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  overflow: hidden;
-  border-radius: 10px;
-}
-.card1 .imgPost {
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.card2 {
-  background-color: white;
-  padding: 20px;
-}
-.card2 .usersCard {
-  gap: 10px;
-  margin-bottom: 15px;
-}
-.card2 .cardTitle {
-  font-size: 30px;
-  font-size: 500;
-  margin-bottom: 15px;
-}
-.card2 #padding {
-  padding-left: 40px;
-}
-
-.avatar {
-  display: flex;
-  flex-direction: row;
-  height: 32px;
-  width: 32px;
-}
-.avatar .avatar1 {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  border-radius: 5px;
-}
-
-.avatar {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  height: 32px;
-  width: 32px;
-}
-.avatar .avatar2 {
-  position: absolute;
-  right: -30%;
-  bottom: -30%;
-  height: 20px;
-  width: 20px;
-  border: 2px solid white;
-  border-radius: 50%;
-}
-
-@media screen and (min-width: 767px) {
-  nav .navLogo input {
-    display: block;
-  }
-  nav .createAccount {
-    gap: 0px;
-  }
-  nav .createAccount svg {
-    display: none;
-  }
-  .loginButton {
-    display: flex;
-  }
-}
 .comentario {
   font-size: 10px;
 }
@@ -403,6 +338,109 @@ header > a:hover {
 
 @media screen and (max-width: 1024px) {
   #derecha {
+    display: none;
+  }
+}
+.card1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.card1 .imgPost {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card2 {
+  background-color: white;
+  padding: 20px;
+}
+.card2 .usersCard {
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.card2 .usersCard .userInfo a {
+  border-radius: 5px;
+  padding: 5px 0px;
+  color: rgb(31, 31, 31);
+  text-decoration: none;
+  font-weight: 500;
+}
+.card2 .usersCard .userInfo a:hover {
+  color: black;
+  background-color: rgba(128, 128, 128, 0.274);
+}
+.card2 .usersCard .userInfo span {
+  font-size: 12px;
+  color: rgb(68, 67, 67);
+}
+.card2 .cardTitle {
+  font-size: 30px;
+  font-size: 500;
+  margin-bottom: 15px;
+}
+.card2 .cardTitle:hover {
+  color: rgb(45, 58, 178);
+  cursor: pointer;
+}
+.card2 #padding {
+  padding-left: 40px;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: row;
+  height: 32px;
+  width: 32px;
+}
+.avatar .avatar1 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.avatar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 32px;
+  width: 32px;
+}
+.avatar .avatar2 {
+  position: absolute;
+  right: -30%;
+  bottom: -30%;
+  height: 20px;
+  width: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 767px) {
+  nav .navLogo input {
+    display: block;
+  }
+  nav .createAccount {
+    gap: 0px;
+  }
+  nav .createAccount svg {
+    display: none;
+  }
+  .loginButton {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .reactionsBackground a {
+    display: block;
+  }
+  .reactionsBackground a span {
     display: none;
   }
 }/*# sourceMappingURL=main.css.map */

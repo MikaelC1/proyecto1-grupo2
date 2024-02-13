@@ -1,7 +1,8 @@
 .hashtags {
     margin-bottom: 15px;
+
     div {
-        
+
         .hText {
             text-decoration: none;
             color: #5B5EAB;
@@ -9,17 +10,22 @@
             text-transform: lowercase;
             border-radius: 10px;
             font-size: 15px;
-        
+
+            &:hover {
+                color: black;
+            }
+
             .hColorP {
                 color: purple;
                 text-decoration: none;
-            
+
             }
-            
+
             .hColorB {
                 color: blue;
                 text-decoration: none;
-            }        
+            }
+
             .hColorG {
                 color: green;
                 text-decoration: none;
@@ -27,8 +33,3 @@
         }
     }
 }
-
-
-
-
-

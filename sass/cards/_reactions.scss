@@ -17,8 +17,8 @@
             cursor: pointer;
         }
 
-       
-        &:hover a{
+
+        &:hover a {
             color: black;
         }
 
@@ -26,9 +26,16 @@
             background-color: rgba(128, 128, 128, 0.274);
         }
 
+        /*  a {
+            display: none;
+
+            span {
+                display: none;
+            }
+        } */
     }
-    
-    .minRead{
+
+    .minRead {
         display: flex;
         justify-content: center;
         gap: 20px;
