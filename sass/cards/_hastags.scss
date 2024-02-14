@@ -1,0 +1,61 @@
+.hashtags {
+    margin-bottom: 15px;
+    gap: 10px;
+
+    div {
+
+        .hTextG {
+            
+            .hColorG {
+                color: green;
+                text-decoration: none;
+                }
+
+            &:hover {
+            background-color:rgba(0, 128, 0, 0.250);
+            border: 1px solid green;
+
+            }
+        }
+
+        .hTextP {
+
+            .hColorP {
+                color: purple;
+                text-decoration: none;
+
+            }
+
+            &:hover {
+                background-color: rgba(128, 0, 128, 0.250);
+                border: 1px solid purple;
+            }
+        }
+
+        .hTextB {
+
+            .hColorB {
+                color: blue;
+                text-decoration: none;
+            }
+
+            &:hover {
+                background-color: rgba(0, 0, 255, 0.250);
+                border: 1px solid blue;
+            }
+        }
+
+        .hText {
+            text-decoration: none;
+            color: #5B5EAB;
+            padding: 4px 7px;
+            text-transform: lowercase;
+            border-radius: 10px;
+            font-size: 15px;
+
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}
