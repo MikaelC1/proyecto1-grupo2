@@ -60,6 +60,15 @@
                 font-size: 13px;
                 color: $text_color;
             }
+
+            .yellow{
+                font-size: 15px;
+                color:#9c7800;
+                border-radius: 10px;
+                background-color: #FCD34D; 
+                width: 40px;
+                padding: 5px; 
+            }
         
             &:hover .normal p{
                 color:blue;
@@ -96,8 +105,7 @@
             text-decoration: none;
             padding: 20px;
             color:black;
-            text-transform: capitalize;
-            
+            text-transform: capitalize;   
     
         }
         &:hover{
@@ -110,11 +118,6 @@
 }
 
 
-.yellow{
-    font-size: 15px;
-    color:#9c7800;
-    border-radius: 10px;
-    background-color: #FCD34D; 
-    width: 40px;
-    padding: 5px; 
-}
+
+
+
