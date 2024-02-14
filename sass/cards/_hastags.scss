@@ -1,9 +1,10 @@
 .hashtags {
+    display: flex;
     margin-bottom: 15px;
     gap: 10px;
+    flex-wrap: wrap;
 
     div {
-
         .hTextG {
 
             .hColorG {
