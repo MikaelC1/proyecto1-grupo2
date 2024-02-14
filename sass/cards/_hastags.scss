@@ -1,7 +1,49 @@
 .hashtags {
     margin-bottom: 15px;
+    gap: 10px;
 
     div {
+
+        .hTextG {
+            
+            .hColorG {
+                color: green;
+                text-decoration: none;
+                }
+
+            &:hover {
+            background-color:rgba(0, 128, 0, 0.250);
+            border: 1px solid green;
+
+            }
+        }
+
+        .hTextP {
+
+            .hColorP {
+                color: purple;
+                text-decoration: none;
+
+            }
+
+            &:hover {
+                background-color: rgba(128, 0, 128, 0.250);
+                border: 1px solid purple;
+            }
+        }
+
+        .hTextB {
+
+            .hColorB {
+                color: blue;
+                text-decoration: none;
+            }
+
+            &:hover {
+                background-color: rgba(0, 0, 255, 0.250);
+                border: 1px solid blue;
+            }
+        }
 
         .hText {
             text-decoration: none;
@@ -13,22 +55,6 @@
 
             &:hover {
                 color: black;
-            }
-
-            .hColorP {
-                color: purple;
-                text-decoration: none;
-
-            }
-
-            .hColorB {
-                color: blue;
-                text-decoration: none;
-            }
-
-            .hColorG {
-                color: green;
-                text-decoration: none;
             }
         }
     }

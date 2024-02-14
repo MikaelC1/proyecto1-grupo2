@@ -30,6 +30,31 @@ body {
 
 .hashtags {
   margin-bottom: 15px;
+  gap: 10px;
+}
+.hashtags div .hTextG .hColorG {
+  color: green;
+  text-decoration: none;
+}
+.hashtags div .hTextG:hover {
+  background-color: rgba(0, 128, 0, 0.25);
+  border: 1px solid green;
+}
+.hashtags div .hTextP .hColorP {
+  color: purple;
+  text-decoration: none;
+}
+.hashtags div .hTextP:hover {
+  background-color: rgba(128, 0, 128, 0.25);
+  border: 1px solid purple;
+}
+.hashtags div .hTextB .hColorB {
+  color: blue;
+  text-decoration: none;
+}
+.hashtags div .hTextB:hover {
+  background-color: rgba(0, 0, 255, 0.25);
+  border: 1px solid blue;
 }
 .hashtags div .hText {
   text-decoration: none;
@@ -41,18 +66,6 @@ body {
 }
 .hashtags div .hText:hover {
   color: black;
-}
-.hashtags div .hText .hColorP {
-  color: purple;
-  text-decoration: none;
-}
-.hashtags div .hText .hColorB {
-  color: blue;
-  text-decoration: none;
-}
-.hashtags div .hText .hColorG {
-  color: green;
-  text-decoration: none;
 }
 
 .reactions {
@@ -280,6 +293,14 @@ nav .navLogo input::placeholder {
   font-size: 13px;
   color: rgb(92, 92, 92);
 }
+#derecha .seccionDerecha .tarjeta .yellow {
+  font-size: 15px;
+  color: #9c7800;
+  border-radius: 10px;
+  background-color: #FCD34D;
+  width: 40px;
+  padding: 5px;
+}
 #derecha .seccionDerecha .tarjeta:hover .normal p {
   color: blue;
 }
@@ -314,15 +335,6 @@ nav .navLogo input::placeholder {
 }
 .trending .box:hover a {
   color: rgb(65, 65, 255);
-}
-
-.yellow {
-  font-size: 15px;
-  color: #9c7800;
-  border-radius: 10px;
-  background-color: #FCD34D;
-  width: 40px;
-  padding: 5px;
 }
 
 .card1 {
