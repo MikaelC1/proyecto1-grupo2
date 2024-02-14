@@ -10,6 +10,14 @@ body {
   max-width: 100%;
 }
 
+.container {
+  margin-top: 10px;
+}
+
+.mainContainer {
+  width: 100%;
+}
+
 .roboto-light {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -37,24 +45,54 @@ body {
   text-decoration: none;
 }
 .hashtags div .hTextG:hover {
-  background-color: rgba(0, 128, 0, 0.25);
-  border: 1px solid green;
+  background-color: rgba(0, 128, 0, 0.05);
+  outline: 1px solid rgba(0, 128, 0, 0.4);
+  transition: background-color 200ms ease;
 }
 .hashtags div .hTextP .hColorP {
   color: purple;
   text-decoration: none;
 }
 .hashtags div .hTextP:hover {
-  background-color: rgba(128, 0, 128, 0.25);
-  border: 1px solid purple;
+  background-color: rgba(128, 0, 128, 0.05);
+  outline: 1px solid rgba(128, 0, 128, 0.4);
+  transition: background-color 200ms ease;
 }
 .hashtags div .hTextB .hColorB {
   color: blue;
   text-decoration: none;
 }
 .hashtags div .hTextB:hover {
-  background-color: rgba(0, 0, 255, 0.25);
-  border: 1px solid blue;
+  background-color: rgba(0, 0, 255, 0.05);
+  outline: 1px solid rgba(0, 0, 255, 0.4);
+  transition: background-color 200ms ease;
+}
+.hashtags div .hTextR .hColorR {
+  color: red;
+  text-decoration: none;
+}
+.hashtags div .hTextR:hover {
+  background-color: rgba(255, 0, 0, 0.05);
+  outline: 1px solid rgba(255, 0, 0, 0.4);
+  transition: background-color 200ms ease;
+}
+.hashtags div .hTextC .hColorC {
+  color: brown;
+  text-decoration: none;
+}
+.hashtags div .hTextC:hover {
+  background-color: rgba(128, 64, 0, 0.05);
+  outline: 1px solid rgba(165, 42, 42, 0.4);
+  transition: background-color 200ms ease;
+}
+.hashtags div .hTextY .hColorY {
+  color: yellow;
+  text-decoration: none;
+}
+.hashtags div .hTextY:hover {
+  background-color: rgba(251, 255, 0, 0.05);
+  outline: 1px solid rgba(255, 255, 0, 0.4);
+  transition: background-color 200ms ease;
 }
 .hashtags div .hText {
   text-decoration: none;
@@ -66,6 +104,7 @@ body {
 }
 .hashtags div .hText:hover {
   color: black;
+  transition: color 200px ease;
 }
 
 .reactions {
@@ -159,6 +198,34 @@ body {
   cursor: pointer;
 }
 
+.save {
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+}
+.save:hover {
+  cursor: pointer;
+  background-color: rgb(247, 247, 247);
+}
+
+.cls-1 {
+  fill: none;
+}
+
+.cls-2 {
+  -webkit-clip-path: url(#clippath);
+          clip-path: url(#clippath);
+}
+
+.cls-3 {
+  fill: #fff;
+}
+
+.cls-4 {
+  fill: #0f0f0f;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -206,7 +273,6 @@ nav .navLogo input::placeholder {
 .mainButtons {
   height: 80%;
   width: 100%;
-  margin-right: 5%;
 }
 .mainButtons a {
   font-size: 16px;
@@ -239,105 +305,11 @@ nav .navLogo input::placeholder {
   color: blue;
 }
 
-#derecha {
-  display: flex;
-  flex-direction: column;
-  width: 18%;
-  border-bottom: 5px solid lightgrey;
-  gap: 10px;
-}
-#derecha .seccionDerecha {
-  background-color: white;
-  border-radius: 10px;
-  overflow: hidden;
-}
-#derecha .seccionDerecha .titulo-header {
-  padding: 12px 16px;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.185);
-}
-#derecha .seccionDerecha .titulo-header a {
-  text-decoration: none;
-}
-#derecha .seccionDerecha .titulo-header a h4 {
-  font-weight: 500;
-  font-size: 20px;
-  color: black;
-  padding-bottom: 10px;
-}
-#derecha .seccionDerecha .titulo-header a h4:hover {
-  color: blue;
-}
-#derecha .seccionDerecha .titulo-header p {
-  font-size: 12px;
-  color: rgb(92, 92, 92);
-}
-#derecha .seccionDerecha .tarjeta {
-  padding: 16px;
-  border-bottom: 1px solid lightgrey;
-  cursor: pointer;
-}
-#derecha .seccionDerecha .tarjeta a {
-  text-decoration: none;
-  color: black;
-  font-size: 15px;
-}
-#derecha .seccionDerecha .tarjeta a p {
-  color: rgb(92, 92, 92);
-  margin-bottom: 5px;
-  font-size: 16px;
-  text-transform: capitalize;
-}
-#derecha .seccionDerecha .tarjeta .comentario {
-  padding-top: 10px;
-  font-size: 13px;
-  color: rgb(92, 92, 92);
-}
-#derecha .seccionDerecha .tarjeta .yellow {
-  font-size: 15px;
-  color: #9c7800;
-  border-radius: 10px;
-  background-color: #FCD34D;
-  width: 40px;
-  padding: 5px;
-}
-#derecha .seccionDerecha .tarjeta:hover a p {
-  color: blue;
-}
-
-.trending {
-  padding: 0px 10px;
-  border-bottom: 1px solid lightgrey;
-  overflow: hidden;
-}
-.trending .titulo-header h4 {
-  font-weight: 500;
-  padding: 8px 0px;
-}
-.trending .box {
-  width: 100%;
-  background-color: none;
-  border-radius: 5px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
-.trending .box a {
-  text-decoration: none;
-  padding: 20px;
-  color: black;
-  text-transform: capitalize;
-}
-.trending .box:hover {
-  background-color: white;
-}
-.trending .box:hover a {
-  color: rgb(65, 65, 255);
-}
-
 .aside1 {
-  flex-basis: 15%;
-  flex-grow: 2;
+  flex-basis: 30%;
+  flex-grow: 3;
   gap: 10px;
+  display: none;
 }
 .aside1 .section1 {
   background-color: white;
@@ -435,6 +407,105 @@ nav .navLogo input::placeholder {
   text-decoration: none;
   color: #2f3ab2;
 }
+.aside1 .section5 p a:hover {
+  text-decoration: underline;
+}
+
+#derecha {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  flex-grow: 2;
+  border-bottom: 5px solid lightgrey;
+  gap: 10px;
+}
+#derecha .seccionDerecha {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#derecha .seccionDerecha .titulo-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.185);
+}
+#derecha .seccionDerecha .titulo-header a {
+  text-decoration: none;
+}
+#derecha .seccionDerecha .titulo-header a h4 {
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  padding-bottom: 10px;
+}
+#derecha .seccionDerecha .titulo-header a h4:hover {
+  color: blue;
+}
+#derecha .seccionDerecha .titulo-header p {
+  font-size: 12px;
+  color: rgb(92, 92, 92);
+}
+#derecha .seccionDerecha .tarjeta {
+  padding: 16px;
+  border-bottom: 1px solid lightgrey;
+  cursor: pointer;
+}
+#derecha .seccionDerecha .tarjeta a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+#derecha .seccionDerecha .tarjeta a p {
+  color: rgb(92, 92, 92);
+  margin-bottom: 5px;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+#derecha .seccionDerecha .tarjeta .comentario {
+  padding-top: 10px;
+  font-size: 13px;
+  color: rgb(92, 92, 92);
+}
+#derecha .seccionDerecha .tarjeta .yellow {
+  font-size: 15px;
+  color: #9c7800;
+  border-radius: 10px;
+  background-color: #FCD34D;
+  width: 40px;
+  padding: 5px;
+}
+#derecha .seccionDerecha .tarjeta:hover a p {
+  color: blue;
+}
+
+.trending {
+  padding: 0px 10px;
+  border-bottom: 1px solid lightgrey;
+  overflow: hidden;
+}
+.trending .titulo-header h4 {
+  font-weight: 500;
+  padding: 8px 0px;
+}
+.trending .box {
+  width: 100%;
+  background-color: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.trending .box a {
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+  text-transform: capitalize;
+}
+.trending .box:hover {
+  background-color: white;
+}
+.trending .box:hover a {
+  color: rgb(65, 65, 255);
+}
 
 .card1 {
   display: flex;
@@ -517,6 +588,20 @@ nav .navLogo input::placeholder {
   border-radius: 50%;
 }
 
+.avatar {
+  display: flex;
+  flex-direction: row;
+  height: 32px;
+  width: 32px;
+}
+.avatar .avatar3 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
 @media screen and (min-width: 767px) {
   nav .navLogo input {
     display: block;
@@ -529,6 +614,14 @@ nav .navLogo input::placeholder {
   }
   .loginButton {
     display: flex;
+  }
+  .aside1 {
+    display: block;
+  }
+  .container {
+    margin: 0 10%;
+    margin-top: 10px;
+    gap: 20px;
   }
 }
 @media only screen and (max-width: 768px) {

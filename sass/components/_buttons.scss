@@ -22,7 +22,7 @@
     }
 }
 
-  .loginButton {
+.loginButton {
     display: none;
     justify-content: center;
     align-items: center;
@@ -44,4 +44,15 @@
       text-decoration: underline;
       cursor: pointer;
     }
+}
+
+.save{
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  background-color:white;
+  &:hover{
+      cursor: pointer;
+      background-color: rgb(247, 247, 247);
+  }
 }
