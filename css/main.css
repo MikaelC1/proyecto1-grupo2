@@ -11,7 +11,9 @@ body {
 }
 
 .container {
+  margin: 0 auto;
   margin-top: 15px;
+  max-width: 1280px;
   gap: 20px;
 }
 
@@ -310,6 +312,7 @@ nav .navLogo input::placeholder {
 }
 
 .aside1 {
+  width: 40%;
   gap: 10px;
 }
 .aside1 .section1 {
