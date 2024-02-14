@@ -10,6 +10,14 @@ body {
   max-width: 100%;
 }
 
+.container {
+  margin-top: 10px;
+}
+
+.mainContainer {
+  width: 100%;
+}
+
 .roboto-light {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -38,7 +46,7 @@ body {
 }
 .hashtags div .hTextG:hover {
   background-color: rgba(0, 128, 0, 0.05);
-  border: 1px solid rgba(0, 128, 0, 0.4);
+  outline: 1px solid rgba(0, 128, 0, 0.4);
   transition: background-color 200ms ease;
 }
 .hashtags div .hTextP .hColorP {
@@ -47,7 +55,7 @@ body {
 }
 .hashtags div .hTextP:hover {
   background-color: rgba(128, 0, 128, 0.05);
-  border: 1px solid rgba(128, 0, 128, 0.4);
+  outline: 1px solid rgba(128, 0, 128, 0.4);
   transition: background-color 200ms ease;
 }
 .hashtags div .hTextB .hColorB {
@@ -56,7 +64,7 @@ body {
 }
 .hashtags div .hTextB:hover {
   background-color: rgba(0, 0, 255, 0.05);
-  border: 1px solid rgba(0, 0, 255, 0.4);
+  outline: 1px solid rgba(0, 0, 255, 0.4);
   transition: background-color 200ms ease;
 }
 .hashtags div .hTextR .hColorR {
@@ -65,7 +73,7 @@ body {
 }
 .hashtags div .hTextR:hover {
   background-color: rgba(255, 0, 0, 0.05);
-  border: 1px solid rgba(255, 0, 0, 0.4);
+  outline: 1px solid rgba(255, 0, 0, 0.4);
   transition: background-color 200ms ease;
 }
 .hashtags div .hTextC .hColorC {
@@ -74,7 +82,7 @@ body {
 }
 .hashtags div .hTextC:hover {
   background-color: rgba(128, 64, 0, 0.05);
-  border: 1px solid rgba(165, 42, 42, 0.4);
+  outline: 1px solid rgba(165, 42, 42, 0.4);
   transition: background-color 200ms ease;
 }
 .hashtags div .hTextY .hColorY {
@@ -83,7 +91,7 @@ body {
 }
 .hashtags div .hTextY:hover {
   background-color: rgba(251, 255, 0, 0.05);
-  border: 1px solid rgba(255, 255, 0, 0.4);
+  outline: 1px solid rgba(255, 255, 0, 0.4);
   transition: background-color 200ms ease;
 }
 .hashtags div .hText {
@@ -157,7 +165,7 @@ body {
 }
 .mainButtons a {
   color: rgb(59, 73, 223);
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 500;
   text-decoration: none;
 }
@@ -179,7 +187,6 @@ body {
   border-radius: 0.375rem;
   background-color: white;
   border: none;
-  font-size: 15px;
   text-decoration: none;
   border: none;
   color: rgb(133, 133, 133);
@@ -189,6 +196,34 @@ body {
   color: rgb(59, 73, 223);
   text-decoration: underline;
   cursor: pointer;
+}
+
+.save {
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+}
+.save:hover {
+  cursor: pointer;
+  background-color: rgb(247, 247, 247);
+}
+
+.cls-1 {
+  fill: none;
+}
+
+.cls-2 {
+  -webkit-clip-path: url(#clippath);
+          clip-path: url(#clippath);
+}
+
+.cls-3 {
+  fill: #fff;
+}
+
+.cls-4 {
+  fill: #0f0f0f;
 }
 
 nav {
@@ -238,7 +273,6 @@ nav .navLogo input::placeholder {
 .mainButtons {
   height: 80%;
   width: 100%;
-  margin-right: 5%;
 }
 .mainButtons a {
   font-size: 16px;
@@ -271,14 +305,123 @@ nav .navLogo input::placeholder {
   color: blue;
 }
 
+.aside1 {
+  flex-basis: 30%;
+  flex-grow: 3;
+  gap: 10px;
+  display: none;
+}
+.aside1 .section1 {
+  background-color: white;
+  padding: 16px;
+  border-radius: 5px;
+  gap: 20px;
+}
+.aside1 .section1 h2 {
+  font-size: 20px;
+}
+.aside1 .section1 h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+.aside1 .section1 div {
+  gap: 5px;
+}
+.aside1 .section1 div .mainButtons {
+  width: 100%;
+  height: 40px;
+}
+.aside1 .section1 div .loginButton {
+  width: 100%;
+  height: 40px;
+}
+.aside1 .section2 {
+  padding: 8px 16px;
+}
+.aside1 .section2 .opt {
+  font-weight: 500;
+  font-size: 18px;
+  padding: 8px;
+}
+.aside1 .section2 ul {
+  height: 400px;
+  overflow-y: scroll;
+}
+.aside1 .section2 ul li {
+  list-style: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+.aside1 .section2 ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+}
+.aside1 .section2 ul li a:hover {
+  color: #2f3ab2;
+  text-decoration: underline;
+}
+.aside1 .section2 ul li:hover {
+  background-color: rgba(59, 73, 223, 0.1019607843);
+  cursor: pointer;
+}
+.aside1 .section2 .link_principal {
+  align-items: center;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.aside1 .section2 .link_principal a {
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+}
+.aside1 .section2 .link_principal a:hover {
+  text-decoration: underline;
+  color: #2f3ab2;
+}
+.aside1 .section2 .link_principal:hover {
+  background-color: #E2E3F3;
+}
+.aside1 .section4 div a {
+  color: #404040;
+  margin: 2px;
+  padding: 5px;
+  display: inline-block;
+}
+.aside1 .section4 div a:hover {
+  background-color: rgba(59, 73, 223, 0.1019607843);
+  color: #2f3ab2;
+  border-radius: 5px;
+}
+.aside1 .section4 div a svg * {
+  fill: currentColor;
+}
+.aside1 .section5 {
+  gap: 10px;
+  margin-top: 24px;
+}
+.aside1 .section5 p {
+  color: rgb(133, 133, 133);
+}
+.aside1 .section5 p a {
+  text-decoration: none;
+  color: #2f3ab2;
+}
+.aside1 .section5 p a:hover {
+  text-decoration: underline;
+}
+
 #derecha {
-  width: 20%;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  flex-grow: 2;
   border-bottom: 5px solid lightgrey;
+  gap: 10px;
 }
 #derecha .seccionDerecha {
   background-color: white;
   border-radius: 10px;
-  margin-bottom: 10px;
   overflow: hidden;
 }
 #derecha .seccionDerecha .titulo-header {
@@ -303,21 +446,19 @@ nav .navLogo input::placeholder {
 }
 #derecha .seccionDerecha .tarjeta {
   padding: 16px;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.185);
+  border-bottom: 1px solid lightgrey;
   cursor: pointer;
 }
-#derecha .seccionDerecha .tarjeta .normal {
+#derecha .seccionDerecha .tarjeta a {
   text-decoration: none;
   color: black;
   font-size: 15px;
 }
-#derecha .seccionDerecha .tarjeta .normal p {
-  color: rgb(92, 92, 92);
-}
-#derecha .seccionDerecha .tarjeta .descripcion {
+#derecha .seccionDerecha .tarjeta a p {
   color: rgb(92, 92, 92);
   margin-bottom: 5px;
   font-size: 16px;
+  text-transform: capitalize;
 }
 #derecha .seccionDerecha .tarjeta .comentario {
   padding-top: 10px;
@@ -332,13 +473,12 @@ nav .navLogo input::placeholder {
   width: 40px;
   padding: 5px;
 }
-#derecha .seccionDerecha .tarjeta:hover .normal p {
+#derecha .seccionDerecha .tarjeta:hover a p {
   color: blue;
 }
 
 .trending {
   padding: 0px 10px;
-  margin: 8px 0px 16px 0px;
   border-bottom: 1px solid lightgrey;
   overflow: hidden;
 }
@@ -347,7 +487,6 @@ nav .navLogo input::placeholder {
   padding: 8px 0px;
 }
 .trending .box {
-  box-sizing: border-box;
   width: 100%;
   background-color: none;
   border-radius: 5px;
@@ -475,6 +614,14 @@ nav .navLogo input::placeholder {
   }
   .loginButton {
     display: flex;
+  }
+  .aside1 {
+    display: block;
+  }
+  .container {
+    margin: 0 10%;
+    margin-top: 10px;
+    gap: 20px;
   }
 }
 @media only screen and (max-width: 768px) {

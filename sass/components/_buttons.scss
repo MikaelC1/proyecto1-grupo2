@@ -5,8 +5,10 @@
     background-color: white;
   
     a {
-      color: $button_color; 
-      font-size: 12px;
+
+      color: $button_color;
+      font-size: 15px;
+
       font-weight: $bold_text;
       text-decoration: none;
     }
@@ -20,7 +22,7 @@
     }
 }
 
-  .loginButton {
+.loginButton {
     display: none;
     justify-content: center;
     align-items: center;
@@ -31,7 +33,6 @@
     border-radius: 0.375rem;
     background-color: white;
     border: none;
-    font-size: 15px;
     text-decoration: none;
     border: none;
     color: rgb(133, 133, 133);
@@ -43,4 +44,15 @@
       text-decoration: underline;
       cursor: pointer;
     }
+}
+
+.save{
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  background-color:white;
+  &:hover{
+      cursor: pointer;
+      background-color: rgb(247, 247, 247);
+  }
 }

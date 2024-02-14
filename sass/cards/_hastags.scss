@@ -14,7 +14,7 @@
 
             &:hover {
                 background-color: rgba(0, 128, 0, 0.050);
-                border: 1px solid rgba(0, 128, 0, 0.400);
+                outline: 1px solid rgba(0, 128, 0, 0.400);
                 transition: background-color 200ms ease;
             }
         }
@@ -29,7 +29,7 @@
 
             &:hover {
                 background-color: rgba(128, 0, 128, 0.050);
-                border: 1px solid rgba(128, 0, 128, 0.400);
+                outline: 1px solid rgba(128, 0, 128, 0.400);
                 transition: background-color 200ms ease;
             }
         }
@@ -43,7 +43,7 @@
 
             &:hover {
                 background-color: rgba(0, 0, 255, 0.050);
-                border: 1px solid rgba(0, 0, 255, 0.400);
+                outline: 1px solid rgba(0, 0, 255, 0.400);
                 transition: background-color 200ms ease;
             }
         }
@@ -57,7 +57,7 @@
 
             &:hover {
                 background-color: rgba(255, 0, 0, 0.050);
-                border: 1px solid rgba(255, 0, 0, 0.400);
+                outline: 1px solid rgba(255, 0, 0, 0.400);
                 transition: background-color 200ms ease;
             }
 
@@ -72,7 +72,7 @@
 
             &:hover {
                 background-color: rgba(128, 64, 0, 0.050);
-                border: 1px solid rgba(165, 42, 42, 0.400);
+                outline: 1px solid rgba(165, 42, 42, 0.400);
                 transition: background-color 200ms ease;
             }
 
@@ -87,7 +87,7 @@
 
             &:hover {
                 background-color: rgba(251, 255, 0, 0.050);
-                border: 1px solid rgba(255, 255, 0, 0.400);
+                outline: 1px solid rgba(255, 255, 0, 0.400);
                 transition: background-color 200ms ease;
             }
 
