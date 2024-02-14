@@ -56,6 +56,30 @@ body {
   background-color: rgba(0, 0, 255, 0.25);
   border: 1px solid blue;
 }
+.hashtags div .hTextR .hColorR {
+  color: red;
+  text-decoration: none;
+}
+.hashtags div .hTextR:hover {
+  background-color: rgba(255, 0, 0, 0.25);
+  border: 1px solid red;
+}
+.hashtags div .hTextC .hColorC {
+  color: brown;
+  text-decoration: none;
+}
+.hashtags div .hTextC:hover {
+  background-color: rgba(128, 64, 0, 0.25);
+  border: 1px solid brown;
+}
+.hashtags div .hTextY .hColorY {
+  color: yellow;
+  text-decoration: none;
+}
+.hashtags div .hTextY:hover {
+  background-color: rgba(251, 255, 0, 0.25);
+  border: 1px solid yellow;
+}
 .hashtags div .hText {
   text-decoration: none;
   color: #5B5EAB;

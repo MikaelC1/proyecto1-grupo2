@@ -5,15 +5,15 @@
     div {
 
         .hTextG {
-            
+
             .hColorG {
                 color: green;
                 text-decoration: none;
-                }
+            }
 
             &:hover {
-            background-color:rgba(0, 128, 0, 0.250);
-            border: 1px solid green;
+                background-color: rgba(0, 128, 0, 0.250);
+                border: 1px solid green;
 
             }
         }
@@ -43,6 +43,48 @@
                 background-color: rgba(0, 0, 255, 0.250);
                 border: 1px solid blue;
             }
+        }
+
+        .hTextR {
+
+            .hColorR {
+                color: red;
+                text-decoration: none;
+            }
+
+            &:hover {
+                background-color: rgba(255, 0, 0, 0.250);
+                border: 1px solid red;
+            }
+
+        }
+
+        .hTextC {
+
+            .hColorC {
+                color: brown;
+                text-decoration: none;
+            }
+
+            &:hover {
+                background-color: rgba(128, 64, 0, 0.250);
+                border: 1px solid brown;
+            }
+
+        }
+
+        .hTextY {
+
+            .hColorY {
+                color: yellow;
+                text-decoration: none;
+            }
+
+            &:hover {
+                background-color: rgba(251, 255, 0, 0.250);
+                border: 1px solid yellow;
+            }
+
         }
 
         .hText {
