@@ -9,12 +9,13 @@
             .hColorG {
                 color: green;
                 text-decoration: none;
+                
             }
 
             &:hover {
-                background-color: rgba(0, 128, 0, 0.250);
-                border: 1px solid green;
-
+                background-color: rgba(0, 128, 0, 0.050);
+                border: 1px solid rgba(0, 128, 0, 0.400);
+                transition: background-color 200ms ease;
             }
         }
 
@@ -27,8 +28,9 @@
             }
 
             &:hover {
-                background-color: rgba(128, 0, 128, 0.250);
-                border: 1px solid purple;
+                background-color: rgba(128, 0, 128, 0.050);
+                border: 1px solid rgba(128, 0, 128, 0.400);
+                transition: background-color 200ms ease;
             }
         }
 
@@ -40,8 +42,9 @@
             }
 
             &:hover {
-                background-color: rgba(0, 0, 255, 0.250);
-                border: 1px solid blue;
+                background-color: rgba(0, 0, 255, 0.050);
+                border: 1px solid rgba(0, 0, 255, 0.400);
+                transition: background-color 200ms ease;
             }
         }
 
@@ -53,8 +56,9 @@
             }
 
             &:hover {
-                background-color: rgba(255, 0, 0, 0.250);
-                border: 1px solid red;
+                background-color: rgba(255, 0, 0, 0.050);
+                border: 1px solid rgba(255, 0, 0, 0.400);
+                transition: background-color 200ms ease;
             }
 
         }
@@ -67,8 +71,9 @@
             }
 
             &:hover {
-                background-color: rgba(128, 64, 0, 0.250);
-                border: 1px solid brown;
+                background-color: rgba(128, 64, 0, 0.050);
+                border: 1px solid rgba(165, 42, 42, 0.400);
+                transition: background-color 200ms ease;
             }
 
         }
@@ -81,8 +86,9 @@
             }
 
             &:hover {
-                background-color: rgba(251, 255, 0, 0.250);
-                border: 1px solid yellow;
+                background-color: rgba(251, 255, 0, 0.050);
+                border: 1px solid rgba(255, 255, 0, 0.400);
+                transition: background-color 200ms ease;
             }
 
         }
@@ -97,6 +103,7 @@
 
             &:hover {
                 color: black;
+                transition: color 200px ease;
             }
         }
     }

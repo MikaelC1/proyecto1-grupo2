@@ -37,48 +37,54 @@ body {
   text-decoration: none;
 }
 .hashtags div .hTextG:hover {
-  background-color: rgba(0, 128, 0, 0.25);
-  border: 1px solid green;
+  background-color: rgba(0, 128, 0, 0.05);
+  border: 1px solid rgba(0, 128, 0, 0.4);
+  transition: background-color 200ms ease;
 }
 .hashtags div .hTextP .hColorP {
   color: purple;
   text-decoration: none;
 }
 .hashtags div .hTextP:hover {
-  background-color: rgba(128, 0, 128, 0.25);
-  border: 1px solid purple;
+  background-color: rgba(128, 0, 128, 0.05);
+  border: 1px solid rgba(128, 0, 128, 0.4);
+  transition: background-color 200ms ease;
 }
 .hashtags div .hTextB .hColorB {
   color: blue;
   text-decoration: none;
 }
 .hashtags div .hTextB:hover {
-  background-color: rgba(0, 0, 255, 0.25);
-  border: 1px solid blue;
+  background-color: rgba(0, 0, 255, 0.05);
+  border: 1px solid rgba(0, 0, 255, 0.4);
+  transition: background-color 200ms ease;
 }
 .hashtags div .hTextR .hColorR {
   color: red;
   text-decoration: none;
 }
 .hashtags div .hTextR:hover {
-  background-color: rgba(255, 0, 0, 0.25);
-  border: 1px solid red;
+  background-color: rgba(255, 0, 0, 0.05);
+  border: 1px solid rgba(255, 0, 0, 0.4);
+  transition: background-color 200ms ease;
 }
 .hashtags div .hTextC .hColorC {
   color: brown;
   text-decoration: none;
 }
 .hashtags div .hTextC:hover {
-  background-color: rgba(128, 64, 0, 0.25);
-  border: 1px solid brown;
+  background-color: rgba(128, 64, 0, 0.05);
+  border: 1px solid rgba(165, 42, 42, 0.4);
+  transition: background-color 200ms ease;
 }
 .hashtags div .hTextY .hColorY {
   color: yellow;
   text-decoration: none;
 }
 .hashtags div .hTextY:hover {
-  background-color: rgba(251, 255, 0, 0.25);
-  border: 1px solid yellow;
+  background-color: rgba(251, 255, 0, 0.05);
+  border: 1px solid rgba(255, 255, 0, 0.4);
+  transition: background-color 200ms ease;
 }
 .hashtags div .hText {
   text-decoration: none;
@@ -90,6 +96,7 @@ body {
 }
 .hashtags div .hText:hover {
   color: black;
+  transition: color 200px ease;
 }
 
 .reactions {
