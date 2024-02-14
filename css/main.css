@@ -28,6 +28,83 @@ body {
   font-style: normal;
 }
 
+.hashtags {
+  margin-bottom: 15px;
+  gap: 10px;
+}
+.hashtags div .hTextG .hColorG {
+  color: green;
+  text-decoration: none;
+}
+.hashtags div .hTextG:hover {
+  background-color: rgba(0, 128, 0, 0.25);
+  border: 1px solid green;
+}
+.hashtags div .hTextP .hColorP {
+  color: purple;
+  text-decoration: none;
+}
+.hashtags div .hTextP:hover {
+  background-color: rgba(128, 0, 128, 0.25);
+  border: 1px solid purple;
+}
+.hashtags div .hTextB .hColorB {
+  color: blue;
+  text-decoration: none;
+}
+.hashtags div .hTextB:hover {
+  background-color: rgba(0, 0, 255, 0.25);
+  border: 1px solid blue;
+}
+.hashtags div .hText {
+  text-decoration: none;
+  color: #5B5EAB;
+  padding: 4px 7px;
+  text-transform: lowercase;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.hashtags div .hText:hover {
+  color: black;
+}
+
+.reactions {
+  justify-content: space-between;
+}
+.reactions a {
+  color: rgb(133, 133, 133);
+  font-size: 15px;
+  padding: 10px;
+  text-decoration: none;
+}
+.reactions .reactionsBackground {
+  border-radius: 5px;
+  /*  a {
+      display: none;
+
+      span {
+          display: none;
+      }
+  } */
+}
+.reactions .reactionsBackground svg {
+  cursor: pointer;
+}
+.reactions .reactionsBackground:hover a {
+  color: black;
+}
+.reactions .reactionsBackground:hover {
+  background-color: rgba(128, 128, 128, 0.274);
+}
+.reactions .minRead {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.reactions .minRead span {
+  color: rgb(133, 133, 133);
+}
+
 .row {
   display: flex;
 }
@@ -35,6 +112,11 @@ body {
 .column {
   display: flex;
   flex-direction: column;
+}
+
+.alignCenter {
+  display: flex;
+  align-items: center;
 }
 
 .mainButtons {
@@ -88,40 +170,25 @@ nav {
   padding: 0 10%;
   background-color: white;
 }
-
-.mainButtons {
-  height: 80%;
-  width: 100%;
-  margin-right: 5%;
-}
-
-.mainButtons a {
-  font-size: 16px;
-}
-
 nav .createAccount {
   align-items: center;
   width: 250px;
   height: 100%;
   gap: 10px;
 }
-
 nav .createAccount svg {
   width: 50px;
 }
-
 nav .navLogo {
   align-items: center;
   gap: 10px;
 }
-
 nav .navLogo img {
   align-items: center;
   width: 44px;
   height: 36px;
   gap: 10px;
 }
-
 nav .navLogo input {
   width: 420px;
   height: 36px;
@@ -137,39 +204,188 @@ nav .navLogo input::placeholder {
   font-size: 15px;
 }
 
+.mainButtons {
+  height: 80%;
+  width: 100%;
+  margin-right: 5%;
+}
+.mainButtons a {
+  font-size: 16px;
+}
+
 .li {
   align-items: center;
   gap: 20px;
-  height: 60px;
-  width: 100%;
   padding-left: 15px;
 }
-
 .li li {
   list-style: none;
 }
-
 .li li a {
   font-size: 18px;
   text-decoration: none;
   color: rgb(133, 133, 133);
+  padding: 5px;
+  border-radius: 5px;
 }
-
+.li li a:hover {
+  background-color: white;
+  color: blue;
+}
 .li li a span {
   color: black;
   font-weight: 500;
+}
+.li li a span:hover {
+  color: blue;
+}
+
+#derecha {
+  width: 20%;
+  border-bottom: 5px solid lightgrey;
+}
+#derecha .seccionDerecha {
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+#derecha .seccionDerecha .titulo-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.185);
+}
+#derecha .seccionDerecha .titulo-header a {
+  text-decoration: none;
+}
+#derecha .seccionDerecha .titulo-header a h4 {
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  padding-bottom: 10px;
+}
+#derecha .seccionDerecha .titulo-header a h4:hover {
+  color: blue;
+}
+#derecha .seccionDerecha .titulo-header p {
+  font-size: 12px;
+  color: rgb(92, 92, 92);
+}
+#derecha .seccionDerecha .tarjeta {
+  padding: 16px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.185);
+  cursor: pointer;
+}
+#derecha .seccionDerecha .tarjeta .normal {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+#derecha .seccionDerecha .tarjeta .normal p {
+  color: rgb(92, 92, 92);
+}
+#derecha .seccionDerecha .tarjeta .descripcion {
+  color: rgb(92, 92, 92);
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+#derecha .seccionDerecha .tarjeta .comentario {
+  padding-top: 10px;
+  font-size: 13px;
+  color: rgb(92, 92, 92);
+}
+#derecha .seccionDerecha .tarjeta .yellow {
+  font-size: 15px;
+  color: #9c7800;
+  border-radius: 10px;
+  background-color: #FCD34D;
+  width: 40px;
+  padding: 5px;
+}
+#derecha .seccionDerecha .tarjeta:hover .normal p {
+  color: blue;
+}
+
+.trending {
+  padding: 0px 10px;
+  margin: 8px 0px 16px 0px;
+  border-bottom: 1px solid lightgrey;
+  overflow: hidden;
+}
+.trending .titulo-header h4 {
+  font-weight: 500;
+  padding: 8px 0px;
+}
+.trending .box {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.trending .box a {
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+  text-transform: capitalize;
+}
+.trending .box:hover {
+  background-color: white;
+}
+.trending .box:hover a {
+  color: rgb(65, 65, 255);
 }
 
 .card1 {
   display: flex;
   flex-direction: column;
   max-width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 .card1 .imgPost {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.card2 {
+  background-color: white;
+  padding: 20px;
+}
+.card2 .usersCard {
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.card2 .usersCard .userInfo a {
+  border-radius: 5px;
+  padding: 5px 0px;
+  color: rgb(31, 31, 31);
+  text-decoration: none;
+  font-weight: 500;
+}
+.card2 .usersCard .userInfo a:hover {
+  color: black;
+  background-color: rgba(128, 128, 128, 0.274);
+}
+.card2 .usersCard .userInfo span {
+  font-size: 12px;
+  color: rgb(68, 67, 67);
+}
+.card2 .cardTitle {
+  font-size: 30px;
+  font-size: 500;
+  margin-bottom: 15px;
+}
+.card2 .cardTitle:hover {
+  color: rgb(45, 58, 178);
+  cursor: pointer;
+}
+.card2 #padding {
+  padding-left: 40px;
 }
 
 .avatar {
@@ -206,112 +422,24 @@ nav .navLogo input::placeholder {
   nav .navLogo input {
     display: block;
   }
-  nav .createAccount svg {
-    display: none;
-  }
   nav .createAccount {
     gap: 0px;
+  }
+  nav .createAccount svg {
+    display: none;
   }
   .loginButton {
     display: flex;
   }
 }
-.comentario {
-  font-size: 10px;
+@media only screen and (max-width: 768px) {
+  .reactionsBackground a {
+    display: block;
+  }
+  .reactionsBackground a span {
+    display: none;
+  }
 }
-
-.titulo {
-  background-color: white;
-}
-
-.titulo-header {
-  padding-left: 15px;
-  padding-top: 10px;
-  margin-bottom: 10px;
-}
-.titulo-header p {
-  font-size: 12px !important;
-}
-
-.tarjeta {
-  box-sizing: border-box;
-  margin-bottom: 15px;
-  margin-left: 15px;
-}
-.tarjeta p {
-  margin-bottom: 5px;
-}
-.tarjeta img {
-  width: 30px;
-  height: 30px;
-}
-
-.yellow {
-  background-color: orange; /* Fondo naranja */
-  display: inline-block; /* Para permitir el box-shadow */
-  box-shadow: 0 0 5px orange; /* Sombra naranja */
-  padding: 2px;
-}
-
-.trending {
-  text-align: left;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.trending header {
-  margin-bottom: 15px;
-}
-
-a.normal {
-  text-decoration: none;
-  cursor: pointer;
-}
-a.normal:hover {
-  color: blue;
-}
-
-div > a {
-  text-decoration: none;
-  font-size: small;
-  text-transform: capitalize;
-  cursor: pointer;
-}
-div > a:hover {
-  color: blue;
-}
-
-header > a {
-  text-decoration: none;
-  cursor: pointer;
-}
-header > a:hover {
-  color: blue;
-}
-
-.recently {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.recently header {
-  margin-bottom: 15px;
-}
-
-.watercooler {
-  background-color: white;
-}
-
-#derecha {
-  background-color: lightgray;
-}
-#derecha section {
-  margin-bottom: 20px;
-}
-
-.seccionDerecha {
-  box-sizing: border-box;
-  border-radius: 20px;
-}
-
 @media screen and (max-width: 1024px) {
   #derecha {
     display: none;

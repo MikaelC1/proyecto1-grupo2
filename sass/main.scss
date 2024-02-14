@@ -1,12 +1,14 @@
 @import 'global/variables';
 @import 'global/global';
 @import 'global/typography';
+@import 'cards/hastags';
+@import 'cards/reactions';
 @import 'global/flexDirections';
 @import 'components/buttons';
 @import 'navbar/navbar';
 @import 'topMidList';
+@import 'aside2/aside';
 @import 'cards/card1';
 @import 'cards/avatar1';
 @import 'cards/avatar2';
 @import 'media_queries/mediaQueries';
-@import 'aside2/aside'
