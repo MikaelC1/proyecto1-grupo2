@@ -1,11 +1,13 @@
 #derecha {
-    width:20%;
+    display: flex;
+    flex-direction: column;
+    width:18%;
     border-bottom:5px solid lightgrey; 
+    gap: 10px;
 
     .seccionDerecha {
         background-color: white;
         border-radius: 10px;
-        margin-bottom: 10px;
         overflow: hidden;
 
         .titulo-header{
@@ -25,34 +27,30 @@
                 
                     }
                 }
-            }
+            }   
 
-            
             p {
                 font-size: 12px;
-                color: $text_color;
+                color: $text_color;    
             }
         }
 
-        .tarjeta{
+        .tarjeta {
             padding:16px;
-            border-bottom: 1px solid rgba(128, 128, 128, 0.185);
+            border-bottom: 1px solid lightgrey;
             cursor: pointer;
         
-            .normal{
+           a  {
                 text-decoration:none;
                 color:black;
                 font-size: 15px;
         
                 p {
-                    color: $text_color;
-                }      
-            }
-            
-            .descripcion {
                 color: $text_color;
                 margin-bottom:5px;
                 font-size: 16px;
+                text-transform: capitalize;
+                }
             }
 
             .comentario{
@@ -67,12 +65,12 @@
                 border-radius: 10px;
                 background-color: #FCD34D; 
                 width: 40px;
-                padding: 5px; 
+                padding: 5px;
+
             }
-        
-            &:hover .normal p{
+
+            &:hover a p{
                 color:blue;
-        
             }
         }
     }
@@ -80,8 +78,7 @@
 
 .trending{
     padding: 0px 10px;
-    margin: 8px 0px 16px 0px;
-    border-bottom:1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
     overflow: hidden;
 
     .titulo-header {
@@ -93,7 +90,6 @@
     }
 
     .box{
-        box-sizing: border-box;
         width: 100%;
         background-color: none;
         border-radius: 5px;

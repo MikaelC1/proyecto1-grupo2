@@ -240,13 +240,15 @@ nav .navLogo input::placeholder {
 }
 
 #derecha {
-  width: 20%;
+  display: flex;
+  flex-direction: column;
+  width: 18%;
   border-bottom: 5px solid lightgrey;
+  gap: 10px;
 }
 #derecha .seccionDerecha {
   background-color: white;
   border-radius: 10px;
-  margin-bottom: 10px;
   overflow: hidden;
 }
 #derecha .seccionDerecha .titulo-header {
@@ -271,21 +273,19 @@ nav .navLogo input::placeholder {
 }
 #derecha .seccionDerecha .tarjeta {
   padding: 16px;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.185);
+  border-bottom: 1px solid lightgrey;
   cursor: pointer;
 }
-#derecha .seccionDerecha .tarjeta .normal {
+#derecha .seccionDerecha .tarjeta a {
   text-decoration: none;
   color: black;
   font-size: 15px;
 }
-#derecha .seccionDerecha .tarjeta .normal p {
-  color: rgb(92, 92, 92);
-}
-#derecha .seccionDerecha .tarjeta .descripcion {
+#derecha .seccionDerecha .tarjeta a p {
   color: rgb(92, 92, 92);
   margin-bottom: 5px;
   font-size: 16px;
+  text-transform: capitalize;
 }
 #derecha .seccionDerecha .tarjeta .comentario {
   padding-top: 10px;
@@ -300,13 +300,12 @@ nav .navLogo input::placeholder {
   width: 40px;
   padding: 5px;
 }
-#derecha .seccionDerecha .tarjeta:hover .normal p {
+#derecha .seccionDerecha .tarjeta:hover a p {
   color: blue;
 }
 
 .trending {
   padding: 0px 10px;
-  margin: 8px 0px 16px 0px;
   border-bottom: 1px solid lightgrey;
   overflow: hidden;
 }
@@ -315,7 +314,6 @@ nav .navLogo input::placeholder {
   padding: 8px 0px;
 }
 .trending .box {
-  box-sizing: border-box;
   width: 100%;
   background-color: none;
   border-radius: 5px;
