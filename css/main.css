@@ -545,9 +545,11 @@ nav .navLogo input::placeholder {
   color: rgb(68, 67, 67);
 }
 .card2 .cardTitle {
-  font-size: 30px;
-  font-size: 500;
   margin-bottom: 15px;
+}
+.card2 .cardTitle h2 {
+  font-size: 30px;
+  font-weight: 500;
 }
 .card2 .cardTitle:hover {
   color: rgb(45, 58, 178);

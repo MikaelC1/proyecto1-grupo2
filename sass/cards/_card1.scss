@@ -44,9 +44,12 @@
     }
 
     .cardTitle {
-        font-size: 30px;
-        font-size: $bold_text;
         margin-bottom: 15px;
+
+        h2 {
+            font-size: 30px;
+            font-weight: $bold_text;
+        }
 
         &:hover {
             color: rgba(45,58,178);
