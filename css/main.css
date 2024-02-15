@@ -124,7 +124,8 @@ body {
   text-decoration: none;
 }
 .reactions .reactionsBackground {
-  border-radius: 5px;
+  border-radius: 8px;
+  padding: 4px 12px 4px 8px;
   /*  a {
       display: none;
 
@@ -140,7 +141,8 @@ body {
   color: black;
 }
 .reactions .reactionsBackground:hover {
-  background-color: rgba(128, 128, 128, 0.274);
+  background-color: rgba(128, 128, 128, 0.1);
+  cursor: pointer;
 }
 .reactions .minRead {
   display: flex;
@@ -309,7 +311,7 @@ nav .navLogo input::placeholder {
   cursor: pointer;
 }
 .li li:hover a, .li li:hover a span {
-  color: blue;
+  color: #2f3ab2;
 }
 
 .aside1 {
@@ -362,10 +364,6 @@ nav .navLogo input::placeholder {
   color: black;
   padding: 8px;
 }
-.aside1 .section2 ul li a:hover {
-  color: #2f3ab2;
-  text-decoration: underline;
-}
 .aside1 .section2 ul li:hover {
   background-color: rgba(59, 73, 223, 0.1019607843);
   cursor: pointer;
@@ -380,12 +378,13 @@ nav .navLogo input::placeholder {
   color: black;
   padding: 8px;
 }
-.aside1 .section2 .link_principal a:hover {
-  text-decoration: underline;
-  color: #2f3ab2;
-}
 .aside1 .section2 .link_principal:hover {
   background-color: #E2E3F3;
+  cursor: pointer;
+}
+.aside1 .section2 .link_principal:hover a {
+  text-decoration: underline;
+  color: #2f3ab2;
 }
 .aside1 .section4 div a {
   color: #404040;

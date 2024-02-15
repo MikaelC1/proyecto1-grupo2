@@ -51,18 +51,14 @@
                 a {
                     text-decoration: none;
                     color: black;
-                    padding: 8px;
-
-                    &:hover{
-                        color: #2f3ab2;
-                        text-decoration: underline;
-                    }
+                    padding: 8px;              
                 }
 
                 &:hover {
                     background-color: #3b49df1a;
                     cursor: pointer;
-                }       
+                }
+                
             }
         }
 
@@ -75,15 +71,16 @@
             text-decoration: none;
             color: black;
             padding: 8px;
-
-            &:hover {
-                text-decoration: underline;
-                color: #2f3ab2;
-                }
             }
 
             &:hover {
                 background-color: #E2E3F3;
+                cursor: pointer;
+            }
+
+            &:hover a{
+                text-decoration: underline;
+                color: #2f3ab2;
             }
         }
     }
