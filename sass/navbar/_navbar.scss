@@ -3,9 +3,9 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     height: 56px;
-    width: 100%;
+    max-width: 100%;
     border-bottom: 1px solid #E0E0E0;
-    padding: 0 10%;
+    padding: 0 16px;
     background-color: white;
 
     .createAccount {
