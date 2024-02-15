@@ -5,27 +5,28 @@
 
     li {
         list-style: none;
+        padding: 5px;
+        border-radius: 5px;
 
         a {
             font-size: 18px;
             text-decoration: none;
             color: $list_color;
-            padding: 5px;
-            border-radius: 5px;
-
-            &:hover {
-                background-color: white;
-                color: blue;
-            }
 
             span{
                 color: black;
                 font-weight: $bold_text;
-
-                &:hover {
-                    color: blue;
-                }
             }
+        }
+
+        &:hover {
+            background-color: white;
+            cursor: pointer;
+        }
+
+        &:hover a,
+        &:hover a span{
+            color: blue;
         }
     }
 }
